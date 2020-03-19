@@ -16,3 +16,4 @@ New Version (Deaths, Confirmed, and Recovered):
 | British Columbia	| Canada	| 49.2827	| -123.1207	| 2020-03-17	| 4	| 0	| 103	| 0	  | 4	| 0 |
 | British Columbia	| Canada	| 49.2827	| -123.1207	| 2020-03-18	| 7	| 3	| 186	| 83	| 4	| 0 |
 
+For the full csv of the combined data see **[here](https://github.com/brentthorne/COVID19r/blob/master/csse_covid19_timeseries_combined_tidy.csv)**.
