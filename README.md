@@ -17,3 +17,16 @@ New Version (Deaths, Confirmed, and Recovered):
 | British Columbia	| Canada	| 49.2827	| -123.1207	| 2020-03-18	| 7	| 3	| 186	| 83	| 4	| 0 |
 
 For the full csv of the combined data see **[here](https://github.com/brentthorne/COVID19r/blob/master/csse_covid19_timeseries_combined_tidy.csv)**.
+
+## Graphs
+
+Here are examples of automated graphs comparing various countries to Italy made using this data using **[this](https://github.com/brentthorne/COVID19r/blob/master/scripts/timeseries_csse_covid19_dailydeath_graphs.R)** R script:
+
+**Canada**
+![](https://raw.githubusercontent.com/brentthorne/COVID19r/master/figures/covid-19_daily_deaths_italy_Canada_2020-03-19.png)
+
+**China**
+![](https://raw.githubusercontent.com/brentthorne/COVID19r/master/figures/covid-19_daily_deaths_italy_China_2020-03-19.png)
+
+**USA**
+![](https://raw.githubusercontent.com/brentthorne/COVID19r/master/figures/covid-19_daily_deaths_italy_US_2020-03-19.png)
