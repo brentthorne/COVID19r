@@ -38,9 +38,9 @@ recovered_tidy <- recovered_raw %>%
   arrange(Country, ProvState, Date) %>%
   mutate(Recovered_Daily = Recovered_Total - lag(Recovered_Total, default = first(Recovered_Total)))
 
-#combine confirmed, recovered and deaths
+#combine confirmed, recovered and deaths  
 covid19_tidy_1 <- full_join(deaths_tidy,confirm_tidy)
 covid19_tidy   <- full_join(covid19_tidy_1,recovered_tidy)
 
-#write output
+#write outputff
 write_csv(covid19_tidy,"csse_covid19_timeseries_combined_tidy.csv")
