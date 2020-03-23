@@ -6,7 +6,8 @@ library(lubridate)
 
 covid19_tidy <- read_csv("csse_covid19_timeseries_combined_tidy.csv")
 
-countries_of_interest <- c("China", "US", "Canada","France","Germany")
+countries_of_interest <- c("China", "US","Spain","Canada","France","Germany")
+# countries_of_interest <- c("France")
 
 i = 1
 
