@@ -1,7 +1,6 @@
 library(tidyverse)
 library(ggthemes)
 library(ggtext)
-library(ggrepel)
 library(lubridate)
 
 covid19_tidy <- read_csv("csse_covid19_timeseries_combined_tidy.csv")
