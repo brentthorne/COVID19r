@@ -2,9 +2,8 @@
 library(tidyverse)
 library(lubridate)
 
-link <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_"
-
 #read raw data
+link <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_"
 deaths_raw    <- read_csv(paste0(link,"deaths_global.csv"))
 confirm_raw   <- read_csv(paste0(link,"confirmed_global.csv"))
 

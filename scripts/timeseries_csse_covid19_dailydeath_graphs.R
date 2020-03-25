@@ -57,6 +57,6 @@ ggplot() +
   NULL
 
 #save plot
-ggsave(paste0("figures/covid-19_daily_deaths_italy_",country,"_",Sys.Date(),".png"), width = 14, height = 7)
+ggsave(paste0("figures/covid-19_daily_deaths_italy_",country,".png"), width = 14, height = 7)
 
 }
