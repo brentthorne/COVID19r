@@ -22,17 +22,4 @@ For the full csv of the combined data see **[here](https://github.com/brentthorn
 
 Here are examples of automated graphs comparing various countries to Italy made using this data using **[this](https://github.com/brentthorne/COVID19r/blob/master/scripts/timeseries_csse_covid19_dailydeath_graphs.R)** R script:
 
-**Canada**
-![](https://raw.githubusercontent.com/brentthorne/COVID19r/master/figures/covid-19_daily_deaths_italy_Canada.png)
-
-**Spain**
-![](https://raw.githubusercontent.com/brentthorne/COVID19r/master/figures/covid-19_daily_deaths_italy_Spain.png)
-
-**China**
-![](https://raw.githubusercontent.com/brentthorne/COVID19r/master/figures/covid-19_daily_deaths_italy_China.png)
-
-**USA**
-![](https://raw.githubusercontent.com/brentthorne/COVID19r/master/figures/covid-19_daily_deaths_italy_US.png)
-
-**Germany**
-![](https://raw.githubusercontent.com/brentthorne/COVID19r/master/figures/covid-19_daily_deaths_italy_Germany.png)
+![](https://raw.githubusercontent.com/brentthorne/COVID19r/master/figures/covid19-daily-deaths.png)
