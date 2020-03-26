@@ -1,7 +1,7 @@
 library(tidyverse)
 library(ggthemes)
-library(ggrepel)
 library(ggdark)
+library(ggtext)
 
 ggplot() +
   
@@ -30,7 +30,7 @@ ggplot() +
   
   geom_text(data = covid19_day1 %>%
               filter(Date == max(Date),
-                     Country != "Canada"),nudge_x = 1.5, nudge_y = 16,
+                     Country != "Canada"),nudge_x = 1, nudge_y = 16,
             aes(x = Day,
                 y = Deaths_Daily,
                 label = Country,
