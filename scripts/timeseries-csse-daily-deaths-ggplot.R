@@ -1,5 +1,5 @@
 library(tidyverse)
-library(gganimate)
+library(ggthemes)
 library(ggrepel)
 library(ggdark)
 
