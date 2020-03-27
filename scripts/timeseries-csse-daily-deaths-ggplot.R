@@ -66,4 +66,4 @@ ggplot() +
   
   NULL
 
-ggsave("figures/covid19-daily-deaths.png", width = 11.8, height = 8.68)
+ggsave("figures/covid19-daily-deaths2.png", width = 11.7, height = 8.68)
