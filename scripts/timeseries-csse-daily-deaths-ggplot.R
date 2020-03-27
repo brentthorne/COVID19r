@@ -49,7 +49,7 @@ ggplot() +
   #customize the theme
   dark_mode(theme_fivethirtyeight()) +
   
-  labs(title = paste("COVID-19 New Daily Deaths"),
+  labs(title = paste0("COVID-19 New Daily Deaths ",max(covid19_day1$Date)),
        x = "Days Since First Death",
        y = "Deaths per Day",
        subtitle = "<span style='color: yellow;'>**Day 1**: _First COVID-19 Death in Country_</span> <br>
