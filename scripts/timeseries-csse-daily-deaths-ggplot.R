@@ -52,11 +52,13 @@ ggplot() +
   labs(title = paste("COVID-19 New Daily Deaths"),
        x = "Days Since First Death",
        y = "Deaths per Day",
-       subtitle = "_Day 1 = First COVID-19 Death in Country_ <br> _Data Source: Johns Hopkins CSSE_") +
+       subtitle = "<span style='color: yellow;'>**Day 1**: _First COVID-19 Death in Country_</span> <br>
+       **Data Source**: _Johns Hopkins CSSE_ <br>
+       <span style='color: #cc0000;'>**Source Code**: _github.com/brentthorne/COVID19r_</span>") +
   
   theme(legend.position = "none",
         plot.title = element_markdown(size = 30),
-        plot.subtitle = element_markdown(size = 16),
+        plot.subtitle = element_markdown(size = 14),
         axis.title = element_markdown(size = 14),
         axis.text = element_text(size = 12,face = "bold")) +
   
