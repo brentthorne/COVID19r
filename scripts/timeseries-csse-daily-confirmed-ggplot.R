@@ -50,8 +50,8 @@ ggplot() +
   dark_mode(theme_fivethirtyeight()) +
   
   labs(title = paste0("COVID-19 New Daily Confirmed Cases ", max(covid19_day1_confirmed$Date)),
-       x = "Days Since First Death",
-       y = "Deaths per Day",
+       x = "Days Since First Case",
+       y = "New Confirmed Cases per Day",
        subtitle = "<span style='color: yellow;'>**Day 1**: _First COVID-19 Case in Country_</span> <br>
        **Data Source**: _Johns Hopkins CSSE_ <br>
        <span style='color: #cc0000;'>**Source Code**: _github.com/brentthorne/COVID19r_</span>") +
