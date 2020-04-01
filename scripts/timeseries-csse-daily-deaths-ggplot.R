@@ -22,24 +22,8 @@ ggplot() +
                  colour = Country,
                  size = Deaths_Daily)) +
   
-  # #add points
-  # geom_line(data = covid19_day1,
-  #            aes(x = Day,
-  #                y = Deaths_Daily,
-  #                colour = Country)) +
-  
   geom_text(data = covid19_day1 %>%
-              filter(Date == max(Date),
-                     Country != "Canada"),nudge_x = 2, nudge_y = 16,
-            aes(x = Day,
-                y = Deaths_Daily,
-                label = Country,
-                colour = Country),
-            size = 5, alpha = 0.95,  family = "bold") +
-  
-  geom_text(data = covid19_day1 %>%
-              filter(Date == max(Date),
-                     Country == "Canada"),nudge_x = 2, nudge_y = -15,
+              filter(Date == max(Date)),hjust = -0.2, vjust = -0.5,
             aes(x = Day,
                 y = Deaths_Daily,
                 label = Country,

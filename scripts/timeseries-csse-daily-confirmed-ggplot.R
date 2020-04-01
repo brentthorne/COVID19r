@@ -29,22 +29,13 @@ ggplot() +
   #                colour = Country)) +
   
   geom_text(data = covid19_day1_confirmed %>%
-              filter(Date == max(Date),
-                     Country != "Canada"),nudge_x = 3, nudge_y = 16,
+              filter(Date == max(Date)), vjust = -0.75,
             aes(x = Day,
                 y = Confirmed_Daily,
                 label = Country,
                 colour = Country),
             size = 5, alpha = 0.95,  family = "bold") +
-  
-  geom_text(data = covid19_day1_confirmed %>%
-              filter(Date == max(Date),
-                     Country == "Canada"),nudge_x = 3, nudge_y = -15,
-            aes(x = Day,
-                y = Confirmed_Daily,
-                label = Country,
-                colour = Country),
-            size = 5, alpha = 0.95,  family = "bold") +
+
   
   #customize the theme
   dark_mode(theme_fivethirtyeight()) +
