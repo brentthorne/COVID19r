@@ -12,18 +12,18 @@ for (i in 1:length(countries_of_interest)) {
 country <- countries_of_interest[i]
 
 if (country == "France") {
-  
-  covid_other <- covid19_tidy %>% 
+
+  covid_other <- covid19_tidy %>%
     filter(Country == country,
-           Deaths_Total > 0) %>% 
-    group_by(Date) %>% 
+           Deaths_Total > 0) %>%
+    group_by(Date) %>%
     summarise(Deaths_Daily = sum(Deaths_Daily))
-  
+
   covid_other$Day <- 1:length(covid_other$Date)
   covid_other$Country <- country
   covid_other <- covid_other %>% filter(Day > 12)
   covid_other$Day <- 1:length(covid_other$Date)
-  
+
 }else{
   
   covid_other <- covid19_tidy %>% 
