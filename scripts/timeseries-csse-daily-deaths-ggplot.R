@@ -23,7 +23,20 @@ ggplot() +
                  size = Deaths_Daily)) +
   
   geom_text(data = covid19_day1 %>%
-              filter(Date == max(Date)),hjust = -0.2, vjust = -0.5,
+              filter(Date == max(Date),
+                     Country != "Canada"),
+            hjust = -0.2, vjust = -0.5,
+            aes(x = Day,
+                y = Deaths_Daily,
+                label = Country,
+                colour = Country),
+            size = 5, alpha = 0.95,  family = "bold") +
+  
+  geom_text(data = covid19_day1 %>%
+              filter(Date == max(Date),
+                     Country == "Canada"),
+            hjust = -0.2,
+            vjust = 0.5,
             aes(x = Day,
                 y = Deaths_Daily,
                 label = Country,
