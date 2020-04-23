@@ -24,4 +24,4 @@ Here are examples of automated graphs comparing various countries to Italy made 
 
 ![](https://raw.githubusercontent.com/brentthorne/COVID19r/master/figures/covid19-daily-deaths.png)
 
-![](https://raw.githubusercontent.com/brentthorne/COVID19r/master/figures/covid19-daily-deaths_USvEurope.png)
+![](https://raw.githubusercontent.com/brentthorne/COVID19r/master/figures/covid19-daily-deaths_USvEurope  .png)
